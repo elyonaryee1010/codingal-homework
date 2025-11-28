@@ -71,3 +71,23 @@ board.right(100)
 
 
 turtle.done()
+
+#NEW CODE
+
+
+secret_number = 10
+results ={}
+
+while True:
+    guess = int(input("Try and find the number the judge has picked"))
+    if guess == secret_number:
+        print("You got it.")
+    else:
+        print("WRONG")
+
+results['final_number'] = secret_number
+
+print(f"You got it! The was {results['final_number']}")
+
+
+
